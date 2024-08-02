@@ -1,0 +1,10 @@
+# Deploy the webapp locally.
+version: "3.8"
+services:
+  webapp:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    restart: "always"
+    ports:
+    - "8000:8000"
